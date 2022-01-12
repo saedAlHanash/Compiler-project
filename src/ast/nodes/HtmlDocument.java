@@ -16,8 +16,9 @@ public class HtmlDocument extends Node {
 
     @Override
     public String toString() {
-        return "HtmlDocument{" +
+        return "HtmlDocument{\n\t" +
                 "elements=" + elements +
+                "\n"+
                 '}';
     }
 }

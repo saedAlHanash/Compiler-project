@@ -221,24 +221,30 @@ fragment DOUBLE_QUOTE_STRING
     : '"' ~[<"]* '"'
     ;
 
+fragment VARNAMEE: ' '* [a-zA-Z_] [a-zA-Z0-9_]* ' '*;
+
 fragment SINGLE_QUOTE_STRING
     : '\'' ~[<']* '\''
     ;
 
+    fragment SEMICOLON
+        : ';'
+        ;
+
+
 mode SAED;
 
-EQUALL
-    : ' '* '=' ' '*;
+   NOT: ' '*  '!'  ' '*;
 
 Q_OPEN
-    : ' '* '"' ' '* -> pushMode(Q_MODE)
+    : ' '* '\'' ' '* -> pushMode(Q_MODE)
     ;
 
 
 mode Q_MODE;
 
     Q_CLOSE
-        : ' '* '"' ' '* -> popMode , popMode
+        : ' '* '\'' ' '* -> popMode , popMode
         ;
 
     CLOSE
@@ -254,7 +260,6 @@ mode Q_MODE;
 
     DOT: '.';
 
-    NOT: ' '* '!' ' '*;
 
     IN: ' '* 'in' ' '*;
 
@@ -288,6 +293,8 @@ mode Q_MODE;
 
     EQUAL: ' '* '=' ' '*;
 
+    SEMICOLONN:  ' '* SEMICOLON ' '*;
+
     COMMA: ' '* ',' ' '*;
 
     TRUE: ' '* 'true' ' '*;
@@ -301,4 +308,6 @@ mode Q_MODE;
     CURLY_CLOSE: ' '* '}' ' '*;
 
     APOSTROPHE: ' '* '\'' ' '*;
+
+    VARNAME:VARNAMEE;
 

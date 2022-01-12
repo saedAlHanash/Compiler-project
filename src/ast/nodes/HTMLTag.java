@@ -18,17 +18,13 @@ public class HTMLTag extends HTMLElement {
         this.name = name;
     }
 
-    public void setAttributes(List<Attribute> attributes) {
-        this.attributes = attributes;
-    }
+
 
     public String getName() {
         return name;
     }
 
-    public List<Attribute> getAttributes() {
-        return attributes;
-    }
+
 
     public List<HTMLElement> getContent() {
         return content;

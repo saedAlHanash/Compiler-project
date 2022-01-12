@@ -6,20 +6,20 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/src/HTMLParser.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src\" />
-          <option name="libDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src\" />
+          <option name="outputDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src" />
+          <option name="libDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src" />
           <option name="encoding" value="" />
-          <option name="pkg" value="eyad" />
+          <option name="pkg" value="saed" />
           <option name="language" value="" />
           <option name="generateVisitor" value="true" />
         </PerGrammarGenerationSettings>
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/src/HTMLLexer.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src\" />
-          <option name="libDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src\" />
+          <option name="outputDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src" />
+          <option name="libDir" value="C:\Users\saed\Desktop\Helpers\Compiler-project\src" />
           <option name="encoding" value="" />
-          <option name="pkg" value="eyad" />
+          <option name="pkg" value="saed" />
           <option name="language" value="" />
           <option name="generateVisitor" value="true" />
         </PerGrammarGenerationSettings>

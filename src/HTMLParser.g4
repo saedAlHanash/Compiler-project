@@ -36,28 +36,67 @@ htmlAttribute
     : TAG_NAME (TAG_EQUALS ATTVALUE_VALUE)?
     ;
 
-
-
-
-
-
-
-   ngAttribute :
+ ngAttribute :
     ng_for
     ;
 
+ng_for: NG_FOR NOT Q_OPEN (forExpressionFirst|forExpressionSecund) Q_CLOSE;
+
+forExpressionFirst:
+
+beforIN IN afterIN
+;
+
+forExpressionSecund:
+beforIN IN afterIN semiColonn
+;
 
 
+beforIN:
+    (var)(morVar)*|
+    expression
+    ;
+
+afterIN:
+    var|array
+    ;
+
+var
+    :VARNAME (dotVar)*
+    ;
+
+dotVar
+    :DOT var
+    ;
+
+ morVar :
+    COMMA var
+    ;
+
+semiColonn :
+SEMICOLONN var EQUAL (var|INDEX|NUMBER)
+;
 
 
+expression :
 
-    ng_for: NG_FOR EQUALL Q_OPEN IN Q_CLOSE;
+var|array|constt
+;
 
+array:
+    ARRAY_TAG_OPEN (expression) (morArrayElement)* ARRAY_TAG_CLOSE
+    |ARRAY_TAG_OPEN array ARRAY_TAG_CLOSE
+;
 
+morArrayElement :
+    COMMA (expression)
+;
 
-
-
-
+constt
+    :CHAR
+    |NUMBER
+    |OPEN_C constt CLOSE_C
+    ;
 
 htmlChardata
     : HTML_TEXT
