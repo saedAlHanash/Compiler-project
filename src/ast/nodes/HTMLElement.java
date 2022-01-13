@@ -4,17 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HTMLElement extends Node{
-    private List<ElementAttribute> attributes = new ArrayList<>();
+
+    private List<ElementAttribute> elementAttributes = new ArrayList<>();
+    HtmlContent htmlContent;
 
     private String tagName;
     private String tagOpen;
 
-    public List<ElementAttribute> getAttributes() {
-        return attributes;
+
+    public List<ElementAttribute> getElementAttributes() {
+        return elementAttributes;
     }
 
-    public void setAttributes(List<ElementAttribute> attributes) {
-        this.attributes = attributes;
+    public void setElementAttributes(List<ElementAttribute> elementAttributes) {
+        this.elementAttributes = elementAttributes;
+    }
+
+    public HtmlContent getHtmlContent() {
+        return htmlContent;
+    }
+
+    public void setHtmlContent(HtmlContent htmlContent) {
+        this.htmlContent = htmlContent;
     }
 
     public String getTagName() {
@@ -36,9 +47,9 @@ public class HTMLElement extends Node{
     @Override
     public String toString() {
         return "HTMLElement{" +
-                "attributes=" + attributes +
+                "elementAttributes=" + elementAttributes +
+                ", htmlContent=" + htmlContent +
                 ", tagName='" + tagName + '\'' +
                 ", tagOpen='" + tagOpen + '\'' +
-                '}';
-    }
+                '}'+"\n";    }
 }

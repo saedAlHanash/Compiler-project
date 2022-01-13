@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 import java.util.ArrayList;
 
@@ -24,9 +24,9 @@ public class Var {
 
     @Override
     public String toString() {
-        return "Var{\n\t" +
+        return "Var{" +
                 "varName='" + varName + '\'' +
-                ", dotVar=" + dotVar +"\n"+
-                '}';
+                ",dotVar=" + dotVar+
+                '}'+"\n" ;
     }
 }

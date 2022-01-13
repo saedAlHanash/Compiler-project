@@ -32,10 +32,10 @@ public class ForExpressionFirst {
 
     @Override
     public String toString() {
-        return "ForExpressionFirst{\n\t" +
+        return "ForExpressionFirst{" +
                 "in='" + in + '\'' +
                 ", beforIN=" + beforIN +
-                ", afterIN=" + afterIN +"\n"+
-                '}';
+                ", afterIN=" + afterIN +
+                '}'+"\n";
     }
 }

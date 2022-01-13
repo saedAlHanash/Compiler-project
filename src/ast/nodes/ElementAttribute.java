@@ -1,8 +1,8 @@
 package ast.nodes;
 
 public class ElementAttribute {
-    Attribute hAttribute = new Attribute();
-    NgAttribute ngAttribute = new NgAttribute();
+    Attribute hAttribute ;
+    NgAttribute ngAttribute;
 
     public Attribute getAttribute() {
         return hAttribute;
@@ -24,7 +24,7 @@ public class ElementAttribute {
     public String toString() {
         return "ElementAttribute{" +
                 "hAttribute=" + hAttribute +
-                ", ngAttribute=" + ngAttribute +
-                '}';
+                ",ngAttribute=" + ngAttribute +
+                 '}'+"\n";
     }
 }

@@ -1,5 +1,7 @@
 package ast.nodes.For;
 
+import ast.nodes.SemiColumn;
+
 public class ForExpressionSecond {
     String In;
     AfterIN afterIN ;
@@ -41,11 +43,11 @@ public class ForExpressionSecond {
 
     @Override
     public String toString() {
-        return "forExpressionSecond{\n\t" +
+        return "forExpressionSecond{" +
                 "In='" + In + '\'' +
                 ", afterIN=" + afterIN +
                 ", beforIN=" + beforIN +
-                ", semiColumn=" + semiColumn +"\n"+
-                '}';
+                ", semiColumn=" + semiColumn +
+                '}'+"\n";
     }
 }

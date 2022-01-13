@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class SemiColumn {
     String semiColumn;
@@ -49,12 +49,12 @@ public class SemiColumn {
 
     @Override
     public String toString() {
-        return "SemiColumn{\n\t" +
+        return "SemiColumn{" +
                 "semiColumn='" + semiColumn + '\'' +
                 ", equal='" + equal + '\'' +
                 ", index=" + index +
                 ", number=" + number +
-                ", var=" + var +"\n"+
-                '}';
+                ", var=" + var+
+                 '}'+"\n" ;
     }
 }

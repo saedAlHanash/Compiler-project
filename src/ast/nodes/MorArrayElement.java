@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class MorArrayElement {
     String comma;
@@ -22,9 +22,9 @@ public class MorArrayElement {
 
     @Override
     public String toString() {
-        return "MorArrayElement{\n\t" +
+        return "MorArrayElement{" +
                 "comma='" + comma + '\'' +
-                ", expression=" + expression +"\n"+
-                '}';
+                ",expression=" + expression +
+                '}'+"\n";
     }
 }

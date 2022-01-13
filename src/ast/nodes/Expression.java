@@ -1,9 +1,18 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class Expression {
     Var var;
     Array array;
+    Constt constt;
 
+
+    public Constt getConstt() {
+        return constt;
+    }
+
+    public void setConstt(Constt constt) {
+        this.constt = constt;
+    }
 
     public Var getVar() {
         return var;
@@ -23,9 +32,10 @@ public class Expression {
 
     @Override
     public String toString() {
-        return "Expression{\n\t" +
+        return "Expression{" +
                 "var=" + var +
-                ", array=" + array +"\n"+
-                '}';
+                ",array=" + array +
+                ",constt=" + constt +
+                '}'+"\n";
     }
 }

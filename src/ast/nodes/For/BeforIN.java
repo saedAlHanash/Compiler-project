@@ -1,5 +1,9 @@
 package ast.nodes.For;
 
+import ast.nodes.Expression;
+import ast.nodes.MorVar;
+import ast.nodes.Var;
+
 public class BeforIN {
 
     Var var ;

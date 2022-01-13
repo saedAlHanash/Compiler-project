@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class DotVar {
     String  dot;
@@ -23,9 +23,9 @@ public class DotVar {
 
     @Override
     public String toString() {
-        return "DotVar{\n\t" +
+        return "DotVar{" +
                 "dot='" + dot + '\'' +
-                ", var=" + var +"\n"+
-                '}';
+                ",var=" + var +
+                '}'+"\n";
     }
 }

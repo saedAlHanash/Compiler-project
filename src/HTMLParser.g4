@@ -18,11 +18,11 @@ htmlElements
     ;
 
 elementAttribute
-: htmlAttribute|ngAttribute;
+: htmlAttribute|(ngAttribute);
 
 htmlElement
-    : TAG_OPEN TAG_NAME elementAttribute*
-      (TAG_CLOSE (htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE)? | TAG_SLASH_CLOSE)
+    : TAG_OPEN TAG_NAME |elementAttribute*
+    (TAG_CLOSE (htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE)? | TAG_SLASH_CLOSE)
     | SCRIPTLET
     | script
     | style
@@ -30,6 +30,7 @@ htmlElement
 
 htmlContent
     : htmlChardata? ((htmlElement | CDATA | htmlComment) htmlChardata?)*
+
     ;
 
 htmlAttribute
@@ -37,10 +38,16 @@ htmlAttribute
     ;
 
  ngAttribute :
-    ng_for
+    ng_for|
+    ng_switch|
+    ng_switch_case|
+    ng_switch_default
     ;
 
 ng_for: NG_FOR NOT Q_OPEN (forExpressionFirst|forExpressionSecund) Q_CLOSE;
+ng_switch: NG_SWITCH NOT Q_OPEN (var) Q_CLOSE;
+ng_switch_case :NG_SWITCH_CASE NOT Q_OPEN (constt|var) Q_CLOSE;
+ng_switch_default :NG_SWITCH_DEFAULT ;
 
 forExpressionFirst:
 

@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class MorVar {
     String comma;
@@ -23,9 +23,9 @@ public class MorVar {
 
     @Override
     public String toString() {
-        return "MorVar{\n\t" +
+        return "MorVar{" +
                 "comma='" + comma + '\'' +
-                ", var=" + var +"\n"+
-                '}';
+                ",var=" + var +
+                '}'+"\n";
     }
 }

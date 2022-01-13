@@ -1,5 +1,8 @@
 package ast.nodes.For;
 
+import ast.nodes.Array;
+import ast.nodes.Var;
+
 public class AfterIN {
 
     Var var;

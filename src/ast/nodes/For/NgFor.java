@@ -63,13 +63,17 @@ public class NgFor extends Node {
 
     @Override
     public String toString() {
-        return "NgFor{\n\t" +
+        String test="";
+        if (NG_FOR !=null)
+          test+="NG_FOR='" + NG_FOR;
+
+        return "NgFor{" +
                 "NG_FOR='" + NG_FOR + '\'' +
                 ", NOT='" + NOT + '\'' +
                 ", Q_OPEN='" + Q_OPEN + '\'' +
                 ", Q_CLOSE='" + Q_CLOSE + '\'' +
                 ", forExpressionFirst=" + forExpressionFirst +
-                ", forExpressionSecond=" + forExpressionSecond +"\n"+
-                '}';
+                ", forExpressionSecond=" + forExpressionSecond +
+                '}'+"\n";
     }
 }

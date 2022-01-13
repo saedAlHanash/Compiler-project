@@ -1,4 +1,4 @@
-package ast.nodes.For;
+package ast.nodes;
 
 public class Array {
     String ArrayTagOpen;
@@ -49,12 +49,12 @@ public class Array {
 
     @Override
     public String toString() {
-        return "Array{\n\t" +
+        return "Array{" +
                 "ArrayTagOpen='" + ArrayTagOpen + '\'' +
                 ", ArrayTagClose='" + ArrayTagClose + '\'' +
-                ", array=" + array +
-                ", expression=" + expression +
-                ", mMorArrayElement=" + mMorArrayElement +"\n"+
-                '}';
+                ",array=" + array +
+                ",expression=" + expression +
+                ",mMorArrayElement=" + mMorArrayElement +"\n"+
+                 '}'+"\n";
     }
 }

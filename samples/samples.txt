@@ -1,1 +1,8 @@
-    <p ng-for!'x in t;i=index'> {{x}}, {{i}} </p>
+    <!-- -----------------switch-------------------  -->
+    <container-element ng-switch!'object.value'>
+        <!-- the same view can be shown in more than one case -->
+        <some-element ng-switch-case!'match_expression_1'>...</some-element>
+        <some-element ng-switch-case!'match_expression_2'>...</some-element>
+        <!--default case when there are no matches -->
+        <some-element ng-switchDefault>...</some-element>
+    </container-element>

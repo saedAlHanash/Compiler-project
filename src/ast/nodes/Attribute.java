@@ -25,6 +25,6 @@ public class Attribute {
         return "Attribute{" +
                 "name='" + name + '\'' +
                 ", value='" + value + '\'' +
-                '}';
+                '}'+"\n";
     }
 }

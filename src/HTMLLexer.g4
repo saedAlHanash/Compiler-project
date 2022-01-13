@@ -86,6 +86,15 @@ NG_SWITCH
         :'ng-switch' ' '* -> pushMode(SAED)
         ;
 
+NG_SWITCH_CASE :
+        'ng-switch-case' ' '* -> pushMode(SAED)
+        ;
+
+NG_SWITCH_DEFAULT :
+         'ng-switchDefault'
+         ;
+
+
 
 TAG_CLOSE
     : '>' -> popMode
